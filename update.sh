@@ -15,3 +15,9 @@ for version in "${versions[@]}"; do
       sed 's/{{ version }}/'$version'/g' Dockerfile > $version/Dockerfile
     )
 done
+
+echo "Fix PHP 5.3"
+(
+  set -x;
+  sed -i '' -e 's/drush:dev-master/drush:7.*/' 5.3/Dockerfile
+)
