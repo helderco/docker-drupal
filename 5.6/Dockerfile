@@ -5,5 +5,3 @@ RUN apt-install mysql-client && \
     docker-php-ext-install pcntl
 
 RUN composer global require drush/drush:dev-master
-
-COPY sql-connect /usr/local/bin/
