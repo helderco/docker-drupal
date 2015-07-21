@@ -11,7 +11,8 @@ for version in "${versions[@]}"; do
     echo "Updating $version"
     (
       set -x
-      cp sql-connect README.md $version
+      rm -rf $version/*
+      cp README.md $version/
       sed 's/{{ version }}/'$version'/g' Dockerfile > $version/Dockerfile
     )
 done
