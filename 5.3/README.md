@@ -5,6 +5,7 @@ Based on [helder/php](https://registry.hub.docker.com/u/helder/php/), adds tooli
 * drush (via composer);
 * mysql-client (because drush uses it to connect to the database);
 * pcntl PHP extension (for the `drush php` interactive php command);
+* drupal console
 
 ## Importing database
 

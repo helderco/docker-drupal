@@ -12,7 +12,7 @@ for version in "${versions[@]}"; do
     (
       set -x
       rm -rf $version/*
-      cp README.md $version/
+      cp README.md drush.sh $version/
       sed 's/{{ version }}/'$version'/g' Dockerfile > $version/Dockerfile
     )
 done
