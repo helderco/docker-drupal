@@ -20,6 +20,6 @@ done
 echo "Fix PHP 5.3"
 (
   set -x
-  sed -i '' -e 's/drush:dev-master/drush:7.*/' 5.3/Dockerfile
+  sed -i '' -e 's/drush:~8.0/drush:7.*/' 5.3/Dockerfile
   sed -i '' -e '/drupal console/,/drush to drupal/d' 5.3/Dockerfile
 )
