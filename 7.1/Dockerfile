@@ -1,4 +1,4 @@
-FROM helder/php:{{ version }}
+FROM helder/php:7.1
 LABEL maintainer=helder
 
 # Install drush globally

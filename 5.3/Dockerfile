@@ -1,5 +1,5 @@
 FROM helder/php:5.3
-MAINTAINER Helder Correia <me@heldercorreia.com>
+LABEL maintainer=helder
 
 # Install drush globally
 RUN apt-install mysql-client && \
