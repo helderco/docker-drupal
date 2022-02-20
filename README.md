@@ -1,4 +1,4 @@
-# Drupal
+# Drupal (DEPRECATED)
 
 Based on [helder/php](https://registry.hub.docker.com/u/helder/php/), adds tooling for [Drupal](https://www.drupal.org).
 
